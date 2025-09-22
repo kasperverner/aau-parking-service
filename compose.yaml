@@ -1,0 +1,14 @@
+﻿services:
+  aau-parking-service:
+    image: aau-parking-service
+    build:
+      context: .
+      dockerfile: AAUParkingService/Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - HANGFIRE_DASHBOARD_USERNAME=docker
+      - HANGFIRE_DASHBOARD_PASSWORD=password
+      - PARKING_JOB_SCHEDULE=30 7 * * 1-5
+      - PARKING_JOB_LICENSE_PLATE=AB12345
+      - PARKING_JOB_PHONE_NUMBER=87654321
