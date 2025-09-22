@@ -67,13 +67,13 @@ See [crontab.guru](https://crontab.guru/) for help creating cron expressions.
 1. **View recent logs:**
 
    ```bash
-   docker compose logs aau-parking-scheduler
+   docker compose logs aau-parking-service
    ```
 
 2. **Follow logs in real-time:**
 
    ```bash
-   docker compose logs -f aau-parking-scheduler
+   docker compose logs -f aau-parking-service
    ```
 
 3. **Viewing logs through Hangfire Dashboard:**
